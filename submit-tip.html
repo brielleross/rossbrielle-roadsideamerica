@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit a Tip | Roadside America Redesign</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+
+    <div class="topnav">
+      <a href="index.html" class="roadsideamerica">Roadside America</a>
+      <img src="images/logo.png" alt="Roadside America Logo">
+    </div>
+
+    <nav>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
+        <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+          <path d="M4 8l8 8 8-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">My Sights</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Mobile</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+  <section class="tip-intro">
+    <h2>Submit a tip</h2>
+    <p>Found something odd on the road? Send it our way. Our editors pick the quirkiest tips and polish them up. Only send words and photos that are your own, and read the <a href="#">Tip Guidelines</a> first.</p>
+  </section>
+
+  <form class="tip-form" action="#" method="post" enctype="multipart/form-data">
+
+    <p class="required-note"><span class="req">*</span> Required</p>
+
+    <fieldset>
+      <legend>The Attraction</legend>
+      <div class="fields">
+
+        <div class="field span-12">
+          <label for="attraction">Attraction <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="attraction" name="attraction" required>
+        </div>
+
+        <div class="field span-5">
+          <label for="town">Town <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="town" name="town" autocomplete="off" required>
+        </div>
+
+        <div class="field span-4">
+          <label for="state">State or province <span class="req" aria-hidden="true">*</span></label>
+          <select id="state" name="state" required>
+            <option value="">Select ...</option>
+            <optgroup label="United States">
+              <option>Alabama</option>
+              <option>Alaska</option>
+              <option>Arizona</option>
+              <option>Arkansas</option>
+              <option>California</option>
+              <option>Colorado</option>
+              <option>Connecticut</option>
+              <option>Delaware</option>
+              <option>District of Columbia</option>
+              <option>Florida</option>
+              <option>Georgia</option>
+              <option>Hawaii</option>
+              <option>Idaho</option>
+              <option>Illinois</option>
+              <option>Indiana</option>
+              <option>Iowa</option>
+              <option>Kansas</option>
+              <option>Kentucky</option>
+              <option>Louisiana</option>
+              <option>Maine</option>
+              <option>Maryland</option>
+              <option>Massachusetts</option>
+              <option>Michigan</option>
+              <option>Minnesota</option>
+              <option>Mississippi</option>
+              <option>Missouri</option>
+              <option>Montana</option>
+              <option>Nebraska</option>
+              <option>Nevada</option>
+              <option>New Hampshire</option>
+              <option>New Jersey</option>
+              <option>New Mexico</option>
+              <option>New York</option>
+              <option>North Carolina</option>
+              <option>North Dakota</option>
+              <option>Ohio</option>
+              <option>Oklahoma</option>
+              <option>Oregon</option>
+              <option>Pennsylvania</option>
+              <option>Rhode Island</option>
+              <option>South Carolina</option>
+              <option>South Dakota</option>
+              <option>Tennessee</option>
+              <option>Texas</option>
+              <option>Utah</option>
+              <option>Vermont</option>
+              <option>Virginia</option>
+              <option>Washington</option>
+              <option>West Virginia</option>
+              <option>Wisconsin</option>
+              <option>Wyoming</option>
+            </optgroup>
+            <optgroup label="Canada">
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland and Labrador</option>
+              <option>Northwest Territories</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Quebec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="field span-3">
+          <label for="postal">Postal code <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="postal" name="postal" autocomplete="postal-code" required>
+        </div>
+
+        <div class="field span-12">
+          <label for="description">Description <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="description" name="description" rows="6" aria-describedby="description-hint" required></textarea>
+          <small class="hint" id="description-hint">20&ndash;75 words. What is it, and what makes it worth the detour?</small>
+        </div>
+
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Photos</legend>
+      <div class="fields">
+
+        <div class="field span-12">
+          <label for="photos">Add up to 3 photos</label>
+          <input type="file" id="photos" name="photos" accept="image/*" multiple aria-describedby="photos-hint">
+          <small class="hint" id="photos-hint">Photos you took yourself. No screenshots or images from other people.</small>
+        </div>
+
+        <label class="check span-12">
+          <input type="checkbox" name="photo-rights">
+          <span>These photos are mine, or I have permission to share them.</span>
+        </label>
+
+      </div>
+    </fieldset>
+
+    <details class="more">
+      <summary>Add more details (optional)</summary>
+      <div class="fields">
+
+        <div class="field span-12">
+          <label for="address">Street address or directions</label>
+          <input type="text" id="address" name="address">
+        </div>
+
+        <div class="field span-6">
+          <label for="visited">When you visited</label>
+          <input type="month" id="visited" name="visited">
+        </div>
+
+        <div class="field span-6">
+          <label for="hours">Hours</label>
+          <input type="text" id="hours" name="hours">
+        </div>
+
+        <div class="field span-6">
+          <label for="latitude">GPS latitude</label>
+          <input type="text" id="latitude" name="latitude" inputmode="decimal">
+        </div>
+
+        <div class="field span-6">
+          <label for="longitude">GPS longitude</label>
+          <input type="text" id="longitude" name="longitude" inputmode="decimal">
+        </div>
+
+        <div class="field span-6">
+          <label for="phone">Attraction phone</label>
+          <input type="text" id="phone" name="phone" inputmode="tel">
+        </div>
+
+        <div class="field span-6">
+          <label for="admission">Admission</label>
+          <input type="text" id="admission" name="admission">
+        </div>
+
+        <div class="field span-6">
+          <label for="url1">Related link #1</label>
+          <input type="text" id="url1" name="url1" inputmode="url">
+        </div>
+
+        <div class="field span-6">
+          <label for="url2">Related link #2</label>
+          <input type="text" id="url2" name="url2" inputmode="url">
+        </div>
+
+        <div class="field span-12">
+          <label for="notes">Notes for the editors</label>
+          <textarea id="notes" name="notes" rows="4" aria-describedby="notes-hint"></textarea>
+          <small class="hint" id="notes-hint">Only the editors will read this. It won't be published.</small>
+        </div>
+
+      </div>
+    </details>
+
+    <fieldset>
+      <legend>About you</legend>
+      <div class="fields">
+
+        <div class="field span-6">
+          <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="field span-6">
+          <label for="email">Your email <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-hint" required>
+          <small class="hint" id="email-hint">Never published.</small>
+        </div>
+
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Before you send</legend>
+
+      <label class="check">
+        <input type="checkbox" name="terms" required>
+        <span>I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>. <span class="req" aria-hidden="true">*</span></span>
+      </label>
+
+      <label class="check">
+        <input type="checkbox" name="age" required>
+        <span>I am 18 or older. <span class="req" aria-hidden="true">*</span></span>
+      </label>
+    </fieldset>
+
+    <button type="submit">Submit tip</button>
+
+  </form>
+
+</main>
+
+  <footer>
+
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="submit-tip.html">Submit A Tip</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </nav>
+
+    <p class="caution">Trip Planning Caution: RoadsideAmerica.com offers maps, directions and attraction details as a convenience, providing all information as is. Attraction status, hours and prices change without notice; call ahead!</p>
+
+    <p class="copyright">&copy; Copyright 1996-2026 Doug Kirby, Ken Smith, Mike Wilkins. All rights reserved. No portion of this document may be reproduced, copied or revised without written permission of the authors.</p>
+
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

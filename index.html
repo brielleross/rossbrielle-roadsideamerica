@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadside America Redesign</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="topnav">
+      <a href="/" class="roadsideamerica">Roadside America</a>
+      <img src="images/logo.png" alt="Roadside America Logo">
+    </div>
+
+    <nav>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
+      <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+      <path d="M4 8l8 8 8-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">My Sights</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Mobile</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+
+    <div class="slides">
+
+      <figure class="slide">
+        <img src="images/hero1.jpg" alt="Memphis, TN">
+        <figcaption>Memphis, Tennessee</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="images/hero2.jpg" alt="Amarillo, TX">
+        <figcaption>Amarillo, Texas</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="images/hero3.jpg" alt="Moab, UT">
+        <figcaption>Moab, Utah</figcaption>
+      </figure>
+
+      <figure class="slide">
+        <img src="images/hero4.jpg" alt="Cape Coral, FL">
+        <figcaption>Cape Coral, Florida</figcaption>
+      </figure>
+
+      <figure class="slide" aria-hidden="true">
+        <img src="images/hero1.jpg" alt="Memphis, TN">
+        <figcaption>Memphis, Tennessee</figcaption>
+      </figure>
+
+    </div>
+
+  </section>
+
+  <section class="search">
+
+    <h2>Search for an attraction:</h2>
+
+    <form action="#" method="get">
+      <label for="attraction" class="sr-only">Attraction</label>
+      <input type="text" id="attraction" name="attraction" placeholder="Attraction ..." class="attraction">
+
+      <label for="city" class="sr-only">City</label>
+      <input type="text" id="city" name="city" placeholder="City ...">
+
+      <label for="state" class="sr-only">State</label>
+      <input type="text" id="state" name="state" placeholder="State ...">
+
+      <button type="submit">Search</button>
+    </form>
+    
+  </section>
+
+  <section class="patterns">
+
+    <h2>Quirky Patterns</h2>
+
+    <article class="pattern">
+      <img src="images/cowlossus.jpg" alt="Cowlossus of Roads logo with a cow and a bull">
+      <div class="pattern-text">
+        <h3>Cowlossus of Roads</h3>
+        <p>Milker monoliths, cows, bulls, buffalo -- the unheard of herd. <a href="#">Fiberglass cow round-up</a></p>
+      </div>
+    </article>
+
+    <article class="pattern">
+      <img src="images/muffler-men.jpg" alt="Face of a fiberglass Muffler Man giant">
+      <div class="pattern-text">
+        <h3>The Muffler Men</h3>
+        <p>Fiberglass giants, birthed in the '60s, demand our attention. We have 'em mapped and tagged. <a href="#">The Pursuit</a></p>
+      </div>
+    </article>
+
+    <article class="pattern">
+      <img src="images/moai.jpg" alt="Easter Island Moai in America logo">
+      <div class="pattern-text">
+        <h3>Easter Island Moai in America</h3>
+        <p>Exotic replica heads of Easter Island endure as pagan pop idols. <a href="#">Roadside Polynesia</a></p>
+      </div>
+    </article>
+
+    <article class="pattern">
+      <img src="images/smiley-tower.jpg" alt="Yellow water tower painted with a smiley face">
+      <div class="pattern-text">
+        <h3>Smiley Face Water Towers</h3>
+        <p>Cheery symbols of municipal pride, with a glass always at least half full. <a href="#">The Rant</a></p>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="apps">
+
+    <h2>Want more fun on the go?</h2>
+    <p>Download our mobile apps!</p>
+
+    <div class="app-list">
+      <a href="#" class="app">
+        <img src="images/roadside66-app.png" alt="Roadside 66 app icon">
+        <span>Roadside 66</span>
+      </a>
+
+      <a href="#" class="app">
+        <img src="images/roadside-america-app.png" alt="Roadside America app icon">
+        <span>Roadside America</span>
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="submit-tip.html">Submit A Tip</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </nav>
+
+    <p class="caution">Trip Planning Caution: RoadsideAmerica.com offers maps, directions and attraction details as a convenience, providing all information as is. Attraction status, hours and prices change without notice; call ahead!</p>
+
+    <p class="copyright">&copy; Copyright 1996-2026 Doug Kirby, Ken Smith, Mike Wilkins. All rights reserved. No portion of this document may be reproduced, copied or revised without written permission of the authors.</p>
+    
+  </footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
